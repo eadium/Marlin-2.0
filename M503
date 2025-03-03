@@ -1,0 +1,64 @@
+Recv: echo:; Linear Units:
+Recv: echo:  G21 ; (mm)
+Recv: echo:; Temperature Units:
+Recv: echo:  M149 C ; Units in Celsius
+Recv: echo:; Filament settings (Disabled):
+Recv: echo:  M200 S0 D1.75
+Recv: echo:; Steps per unit:
+Recv: echo:  M92 X80.00 Y80.00 Z400.00 E96.00
+Recv: echo:; Max feedrates (units/s):
+Recv: echo:  M203 X300.00 Y300.00 Z5.00 E25.00
+Recv: echo:; Max Acceleration (units/s2):
+Recv: echo:  M201 X3000.00 Y3000.00 Z100.00 E10000.00
+Recv: echo:; Acceleration (units/s2) (P<print-accel> R<retract-accel> T<travel-accel>):
+Recv: echo:  M204 P500.00 R3000.00 T500.00
+Recv: echo:; Advanced (B<min_segment_time_us> S<min_feedrate> T<min_travel_feedrate> J<junc_dev>):
+Recv: echo:  M205 B20000.00 S0.00 T0.00 J0.01
+Recv: echo:; Home offset:
+Recv: echo:  M206 X0.00 Y-5.00 Z1.80
+Recv: echo:; Auto Bed Leveling:
+Recv: echo:  M420 S1 Z10.00 ; Leveling ON
+Recv: echo:  G29 W I0 J0 Z-0.15000
+Recv: echo:  G29 W I1 J0 Z-0.25500
+Recv: echo:  G29 W I2 J0 Z-0.34750
+Recv: echo:  G29 W I3 J0 Z-0.52000
+Recv: echo:  G29 W I4 J0 Z-0.65750
+Recv: echo:  G29 W I0 J1 Z-0.04250
+Recv: echo:  G29 W I1 J1 Z-0.08250
+Recv: echo:  G29 W I2 J1 Z-0.09500
+Recv: echo:  G29 W I3 J1 Z-0.16250
+Recv: echo:  G29 W I4 J1 Z-0.24000
+Recv: echo:  G29 W I0 J2 Z0.05750
+Recv: echo:  G29 W I1 J2 Z0.02500
+Recv: echo:  G29 W I2 J2 Z0.03250
+Recv: echo:  G29 W I3 J2 Z-0.04000
+Recv: echo:  G29 W I4 J2 Z-0.10250
+Recv: echo:  G29 W I0 J3 Z0.15250
+Recv: echo:  G29 W I1 J3 Z0.11750
+Recv: echo:  G29 W I2 J3 Z0.15250
+Recv: echo:  G29 W I3 J3 Z0.10250
+Recv: echo:  G29 W I4 J3 Z0.06000
+Recv: echo:  G29 W I0 J4 Z0.21250
+Recv: echo:  G29 W I1 J4 Z0.23250
+Recv: echo:  G29 W I2 J4 Z0.28000
+Recv: echo:  G29 W I3 J4 Z0.24750
+Recv: echo:  G29 W I4 J4 Z0.24750
+Recv: echo:; Material heatup parameters:
+Recv: echo:  M145 S0 H200.00 B60.00 F0
+Recv: echo:  M145 S1 H230.00 B75.00 F0
+Recv: echo:; Hotend PID:
+Recv: echo:  M301 P22.20 I1.08 D114.00
+Recv: echo:; Z-Probe Offset:
+Recv: echo:  M851 X-40.00 Y-2.00 Z0.00 ; (mm)
+Recv: echo:; Stepper driver current:
+Recv: echo:  M906 X800 Y800 Z800
+Recv: echo:  M906 T0 E800
+Recv: echo:; Driver stepping mode:
+Recv: echo:  M569 S1 X Y Z
+Recv: echo:  M569 S1 T0 E
+Recv: echo:; Linear Advance:
+Recv: echo:  M900 K0.10
+Recv: echo:; Filament load/unload:
+Recv: echo:  M603 L50.00 U100.00 ; (mm)
+Recv: echo:; Filament runout sensor:
+Recv: echo:  M412 S1 D50.00 ; Sensor ON
